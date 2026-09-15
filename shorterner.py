@@ -32,7 +32,8 @@ while True:
           short_code = "".join(random.choices(characters,k=6))
           urls[short_code] = long_url
           print(f"Your short code is : {short_code}")
-          #input("Press Enter to return to Menu... ")
+
+          input("\nPress Enter to return to Menu... ")
            
       
     elif choice == "2":
@@ -40,14 +41,15 @@ while True:
               short_code = input("Enter short code: ")
               if short_code in urls:
                 print(f"The long URL is : {urls[short_code]}")
+                input("\nPress Enter to return to Menu... ")
                 break
               else:
                 print("Not found")
-                #input("Press Enter to return to Menu... ")
+                
 
     elif choice == "3":
           print("Goodbye!")
           break
     else:
           print("Invalid choice")
-          #input("Press Enter to return to Menu... ")
+          
