@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!--<h2>Countdown Timer</h2>
+    <h1 id="timer">1:00</h1>
+
+<div>
+  <button id="startBtn">Start</button>
+   <button id="pauseBtn">Pause</button>
+    <button id="resetBtn">Reset</button>
+</div>/* let time = 60;
+let timerInterval = null;
+let isRunning = false;
+
+const timerDisplay = document.getElementById('timer');
+
+//update the display in MM:SS format
+function updateDisplay() {
+  const minutes = Math.floor(time / 60);
+  const seconds =  time % 60;
+
+  timerDisplay.textContent =
+  `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+}
+
+//start the countdown
+function startTimer(){
+  if(isRunning)return;
+  
+  isRunning = true;
+
+  timerInterval = setInterval(() => {
+    time--;
+    updateDisplay();
+
+    if (time <= 0){
+      clearInterval(timerInterval);
+      isRunning = false;
+      timerDisplay.textContent ="00:00";
+      alert("Times's Up!");
+    }
+  },1000);
+}
+
+//pause the timer
+function pauseTimer(){
+  clearInterval(timerInterval);
+  isRunning = false;
+}
+
+//reset the timer
+function resetTimer(){
+  clearInterval(timerInterval);
+  time = 60;
+  isRunning = false;
+  updateDisplay();
+}
+
+//add click events to buttons
+document.getElementById('startBtn').addEventListener('click', startTimer);
+document.getElementById('pauseBtn').addEventListener('click', pauseTimer);
+document.getElementById('resetBtn').addEventListener('click', resetTimer);
+
+updateDisplay(); */
+
+const items = {
+  name: 'iphone 12 pro',
+  price: 5000,
+  discount: 0.2,
+};
+
+items.price = items.price - items.price * items.discount;
+
+const newprice = 'The final amount of the iphone 12 pro is ' +items.price;
+
+console.log(newprice);
+-->  
+
+
+</body>
+
+<script src="script.js"></script>
+</html>
+
